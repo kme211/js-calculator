@@ -1,7 +1,10 @@
 (function () {
   'use strict';
 
-  var init = function init() {
+  var calculator = require('./calculator.js'),
+    view = require('./view.js'),
+
+    init = function init() {
       view.init(this);
     },
 
@@ -54,7 +57,7 @@
       }
     },
 
-    api = {
+    app = {
       init: init,
       addNum: addNum,
       addOperator: addOperator,
@@ -64,8 +67,6 @@
       deleteLastChar: deleteLastChar,
       keyHandler: keyHandler
     };
-
-  window.app = api;
 
   app.init();
 

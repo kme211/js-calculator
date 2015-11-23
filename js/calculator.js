@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  var api,
+  var helpers = require('./helpers.js'),
+    api,
     c = [],
     mathFunctions = {
       '+': function (a, b) {
@@ -120,6 +121,6 @@
     clear: clear
   };
 
-  window.calculator = api;
+  module.exports = api;
 
 }());

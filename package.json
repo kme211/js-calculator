@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A Javascript calculator developed for FreeCodeCamp",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kme211/js-calculator.git"
+  },
+  "author": "Keari Eggers <kungfu.keari@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.8"
+  }
+}

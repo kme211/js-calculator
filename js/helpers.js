@@ -23,6 +23,6 @@
     }
   }
 
-  window.helpers = api;
+  module.exports = api;
 
 }());

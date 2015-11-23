@@ -33,6 +33,6 @@
     }
   };
 
-  window.view = api;
+  module.exports = api;
 
 }());
