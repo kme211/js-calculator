@@ -45,7 +45,6 @@
       var keyPressed = String.fromCharCode(e.keyCode),
         enterKeyCode = 13,
         dotKeyCode = 46;
-      console.log(this);
       if (calculator.isValidNumber(keyPressed)) {
         this.addNum(keyPressed);
       } else if (calculator.isValidOperator(keyPressed)) {

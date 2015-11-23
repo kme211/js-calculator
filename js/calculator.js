@@ -27,12 +27,9 @@
     containsOperator = helpers.hasChars(validOperators);
 
   function calculate(arr) {
-    console.log(arr);
     var num1 = containsDot(arr[0]) ? parseFloat(arr[0]) : parseInt(arr[0]),
       operator = arr[1],
       num2 = containsDot(arr[2]) ? parseFloat(arr[2]) : parseInt(arr[2]);
-    console.log("num1: " + num1);
-    console.log("num2: " + num2);
     return mathFunctions[operator](num1, num2);
   }
 
@@ -73,7 +70,6 @@
 
   function addNum(num) {
     var lastItem = helpers.getLastItemInArray(c);
-    console.log("lastItem: " + lastItem)
     if (lastItem && !containsOperator(lastItem)) {
       c.pop();
       c.push(lastItem.concat(num));
