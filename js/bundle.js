@@ -82,7 +82,7 @@
 	    },
 
 	    deleteLastChar = function deleteLastChar() {
-	      calculator.delete();
+	      calculator.deleteLastChar();
 	      view.render(calculator.display());
 	    },
 
@@ -158,7 +158,9 @@
 
 	  function addOperator(op) {
 	    var lastItem = helpers.getLastItemInArray(c);
-	    if (!lastItem) return;
+	    if (!lastItem) {
+	      return;
+	    }
 	    if (lastItem && containsOperator(lastItem)) {
 	      c.pop();
 	    }
@@ -226,7 +228,7 @@
 
 	  function isValidNumber(char) {
 	    return containsNumber(char);
-	  };
+	  }
 
 	  api = {
 	    isValidOperator: isValidOperator,
@@ -235,7 +237,7 @@
 	    addOperator: addOperator,
 	    addDot: addDot,
 	    addNum: addNum,
-	    delete: deleteLastChar,
+	    deleteLastChar: deleteLastChar,
 	    computeTotal: computeTotal,
 	    clear: clear
 	  };

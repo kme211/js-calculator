@@ -35,7 +35,9 @@
 
   function addOperator(op) {
     var lastItem = helpers.getLastItemInArray(c);
-    if (!lastItem) return;
+    if (!lastItem) {
+      return;
+    }
     if (lastItem && containsOperator(lastItem)) {
       c.pop();
     }
@@ -103,7 +105,7 @@
 
   function isValidNumber(char) {
     return containsNumber(char);
-  };
+  }
 
   api = {
     isValidOperator: isValidOperator,
