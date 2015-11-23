@@ -36,7 +36,7 @@
     },
 
     deleteLastChar = function deleteLastChar() {
-      calculator.delete();
+      calculator.deleteLastChar();
       view.render(calculator.display());
     },
 

@@ -112,7 +112,7 @@
     addOperator: addOperator,
     addDot: addDot,
     addNum: addNum,
-    delete: deleteLastChar,
+    deleteLastChar: deleteLastChar,
     computeTotal: computeTotal,
     clear: clear
   };
